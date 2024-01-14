@@ -23,8 +23,6 @@ After git initialization, all the changes are merged using PRs. If you wish to s
 
 </div>
 
-<br>
-
 <div id="environment"></div>
 
 ## Environment:
@@ -42,8 +40,6 @@ After git initialization, all the changes are merged using PRs. If you wish to s
 
 </div>
 
-
-<br>
 
 <div id="project-installation"></div>
 
@@ -111,11 +107,8 @@ That's all, stop here! Happy exploring.
 </div>
 
 <br>
-<br>
 
 ---
-
-<br>
 
 <div id='removing-files'></div>
 
