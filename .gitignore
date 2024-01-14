@@ -12,9 +12,10 @@ wp-content/mu-plugins/*
 wp-content/plugins/*
 wp-content/themes/*
 
-# Ignore installed packages.
+# Ignore installed packages an build folders.
 node_modules/
 vendor/
+build/
 
 # Whitelisted
 !.gitignore
