@@ -323,6 +323,34 @@ body {
 	border: 1px solid #C3C4C7;
 }
 
+.requestform__message {
+	margin: 0 0 1.5rem 0;
+	background-color: #FFC107;
+	color: #000000;
+	border-radius: 0.5rem;
+	padding: 0.5rem 0.75rem;
+	display: none;
+}
+
+.requestform__message.show {
+	display: block;
+}
+
+.requestform__message.error {
+	background-color: #DC3545;
+	color: #FFFFFF;
+}
+
+.requestform__message.success {
+	background-color: #28A745;
+	color: #FFFFFF;
+}
+
+.requestform__message.warning {
+	background-color: #FFC107;
+	color: #000000;
+}
+
 .requestform__wrapper {
 	margin: 0 0 1.5rem 0;
 	display: flex;
