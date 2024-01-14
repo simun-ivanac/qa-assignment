@@ -1,0 +1,23 @@
+# Ignore everything in root, besides 'wp-content'.
+/*
+!wp-content/
+
+# Ignore everything in 'wp-content', besides 'themes' & 'plugins'.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore all plugins and themes.
+wp-content/mu-plugins/*
+wp-content/plugins/*
+wp-content/themes/*
+
+# Ignore installed packages.
+node_modules/
+vendor/
+
+# Whitelisted
+!.gitignore
+!README.md
+!wp-content/plugins/movies
+!wp-content/themes/qa-assignment
