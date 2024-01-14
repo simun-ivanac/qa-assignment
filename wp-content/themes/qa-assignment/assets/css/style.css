@@ -378,3 +378,35 @@ body {
 	color: #FFFFFF;
 	cursor: pointer;
 }
+
+/* Sections. */
+.wrapper {
+	margin: 2rem auto 0;
+	width: 100%;
+	max-width: 1000px;
+}
+
+/* Post content. */
+.post-item__title {
+	margin: 0;
+	font-size: 2rem;
+}
+
+.post-item__content {
+	margin: 3rem 0;
+}
+
+.post-item__content > * {
+	margin-bottom: 1.5rem;
+}
+
+/* Post meta field. */
+.movie-title {
+	display: flex;
+	align-items: flex-end;
+	column-gap: 0.5rem;
+}
+.movie-title__label {
+	font-size: 1.25rem;
+	margin: 0;
+}
