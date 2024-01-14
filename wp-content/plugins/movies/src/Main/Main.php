@@ -10,6 +10,7 @@ declare(strict_types=1);
 
 namespace Movies\Main;
 
+use Movies\Blocks\Blocks;
 use Movies\CustomPostType\MoviesPostType;
 use Movies\CustomMeta\MoviesMeta;
 
@@ -29,5 +30,6 @@ class Main
 	{
 		(new MoviesMeta())->registerHooks();
 		(new MoviesPostType())->registerHooks();
+		(new Blocks())->registerHooks();
 	}
 }
