@@ -55,6 +55,6 @@ class SymfonySkeletonFormSubmit
 			return;
 		}
 
-		// Pass data..
+		(new SymfonySkeletonConnect($email, $password))->sendApiRequest();
 	}
 }
