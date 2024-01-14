@@ -1,0 +1,16 @@
+{
+	"name": "movies",
+	"version": "1.0.0",
+	"description": "Packages required by Movies plugin.",
+	"author": "Šimun Ivanac",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://movies.test",
+	"main": "build/favorite-movie-quote.js",
+	"scripts": {
+		"build:custom-directory": "wp-scripts build --webpack-src-dir=src/Blocks/favorite-movie-quote --webpack-copy-php",
+		"start:custom-directory": "wp-scripts start --webpack-src-dir=src/Blocks/favorite-movie-quote --webpack-copy-php"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.19.0"
+	}
+}
