@@ -10,6 +10,8 @@ declare(strict_types=1);
 
 namespace QaAssignment\Main;
 
+use QaAssignment\Enqueue\EnqueueTheme;
+
 /**
  * Class Main.
  */
@@ -22,6 +24,6 @@ class Main
 	 */
 	public function loadTheme(): void
 	{
-		// Include classes.
+		(new EnqueueTheme())->registerHooks();
 	}
 }
