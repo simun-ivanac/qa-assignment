@@ -17,7 +17,7 @@
 Repository contains only relevant files. All excluded files are simply part of default WP installation.
 After git initialization, all the changes are merged using PRs. If you wish to see them, go <a href="https://github.com/simun-ivanac/qa-assignment/pulls?q=is%3Apr+is%3Aclosed" target="_blank">here</a>.
 
-<div style="text-align: right;">
+<div align="right">
 
 [Top](#top)
 
@@ -36,7 +36,7 @@ After git initialization, all the changes are merged using PRs. If you wish to s
 - Composer: 2.5.8
 - MySQL: 8.0.33
 
-<div style="text-align: right;">
+<div align="right">
 
 [Top](#top)
 
@@ -104,7 +104,7 @@ wp rewrite flush
 
 That's all, stop here! Happy exploring.
 
-<div style="text-align: right;">
+<div align="right">
 
 [Top](#top)
 
@@ -130,7 +130,7 @@ Because of node_modules, removing the plugin might take a few moments.
 - wp plugin delete movies
 - wp rewrite flush
 
-<div style="text-align: right;">
+<div align="right">
 
 [Top](#top)
 
