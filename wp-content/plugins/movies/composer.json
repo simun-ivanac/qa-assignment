@@ -10,8 +10,8 @@
 	"license": "GPL-2.0-or-later",
 	"author": "Šimun Ivanac",
 	"support": {
-		"issues": "https://github.com/simun-ivanac",
-		"source": "https://github.com/simun-ivanac"
+		"issues": "https://github.com/simun-ivanac/qa-assignment",
+		"source": "https://github.com/simun-ivanac/qa-assignment"
 	},
 	"require": {
 		"php": "^8.0"
