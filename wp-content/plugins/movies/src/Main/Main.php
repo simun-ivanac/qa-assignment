@@ -11,6 +11,7 @@ declare(strict_types=1);
 namespace Movies\Main;
 
 use Movies\CustomPostType\MoviesPostType;
+use Movies\CustomMeta\MoviesMeta;
 
 /**
  * Class Main.
@@ -26,6 +27,7 @@ class Main
 	 */
 	public function loadPlugin(): void
 	{
+		(new MoviesMeta())->registerHooks();
 		(new MoviesPostType())->registerHooks();
 	}
 }

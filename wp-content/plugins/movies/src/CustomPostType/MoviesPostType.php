@@ -126,4 +126,16 @@ class MoviesPostType
 			'capability_type' => self::POST_CAPABILITY,
 		];
 	}
+
+	/**
+	 * Get custom post type slug.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return string
+	 */
+	public static function getPostTypeSlug(): string
+	{
+		return self::POST_TYPE_SLUG;
+	}
 }
