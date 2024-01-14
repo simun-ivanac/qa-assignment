@@ -10,6 +10,8 @@ declare(strict_types=1);
 
 namespace Movies\Main;
 
+use Movies\CustomPostType\MoviesPostType;
+
 /**
  * Class Main.
  */
@@ -24,6 +26,6 @@ class Main
 	 */
 	public function loadPlugin(): void
 	{
-		// Include classes.
+		(new MoviesPostType())->registerHooks();
 	}
 }
