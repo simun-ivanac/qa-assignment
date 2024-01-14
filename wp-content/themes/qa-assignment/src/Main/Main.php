@@ -11,6 +11,7 @@ declare(strict_types=1);
 namespace QaAssignment\Main;
 
 use QaAssignment\Enqueue\EnqueueTheme;
+use QaAssignment\SymfonySkeleton\SymfonySkeletonFormSubmit;
 
 /**
  * Class Main.
@@ -25,5 +26,6 @@ class Main
 	public function loadTheme(): void
 	{
 		(new EnqueueTheme())->registerHooks();
+		(new SymfonySkeletonFormSubmit())->registerHooks();
 	}
 }
