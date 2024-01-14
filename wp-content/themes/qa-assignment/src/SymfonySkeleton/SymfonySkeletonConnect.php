@@ -92,7 +92,7 @@ class SymfonySkeletonConnect implements SymfonySkeletonInterface
 			return;
 		}
 
-		// Save to session..
+		(new SessionTokenStorage())->setToken($apiData['token_key']);
 	}
 
 	/**
