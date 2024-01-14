@@ -10,6 +10,10 @@ declare(strict_types=1);
 
 namespace QaAssignment\Main;
 
+use QaAssignment\Enqueue\EnqueueTheme;
+use QaAssignment\SymfonySkeleton\SymfonySkeletonFormSubmit;
+use QaAssignment\Session\SessionEventHandler;
+
 /**
  * Class Main.
  */
@@ -22,6 +26,8 @@ class Main
 	 */
 	public function loadTheme(): void
 	{
-		// Include classes.
+		(new EnqueueTheme())->registerHooks();
+		(new SessionEventHandler())->registerHooks();
+		(new SymfonySkeletonFormSubmit())->registerHooks();
 	}
 }
