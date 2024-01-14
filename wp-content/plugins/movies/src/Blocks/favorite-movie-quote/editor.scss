@@ -1,0 +1,27 @@
+// Add some cool block icon color.
+.block-editor-block-types-list[aria-label='Movies'],
+.editor-block-list-item-movies-favorite-movie-quote {
+	.block-editor-block-types-list__item-icon {
+		background-color: #8FA8C1;
+		color: #FFFFFF;
+	}
+}
+
+// Block editor overrides.
+.favorite-movie-quote {
+	&__content {
+		&::before,
+		&::after {
+			content:'';
+		}
+	}
+
+	.rich-text {
+		&::before,
+		&::after {
+			content:'"';
+			font-size: 1.25rem;
+			font-weight: bold;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "movies/favorite-movie-quote",
+	"version": "1.0.0",
+	"title": "Favorite movie quote",
+	"keywords": [
+		"favorite",
+		"movie",
+		"quote"
+	],
+	"category": "movies",
+	"icon": "editor-quote",
+	"description": "Tell others about your favorite movie quote.",
+	"example": {
+		"favoriteMovieQuoteContent": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.",
+		"favoriteMovieQuoteAuthor": "Gandalf",
+		"favoriteMovieQuoteTextAlign": "center"
+	},
+	"attributes": {
+		"favoriteMovieQuoteContent": {
+			"type": "string"
+		},
+		"favoriteMovieQuoteAuthor": {
+			"type": "string"
+		},
+		"favoriteMovieQuoteTextAlign": {
+			"type": "string",
+			"default": "center"
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true
+		}
+	},
+	"textdomain": "movies",
+	"editorScript": "file:./favorite-movie-quote.js",
+	"editorStyle": "file:./favorite-movie-quote.css",
+	"style": "file:./style-favorite-movie-quote.css",
+	"render": "file:./favorite-movie-quote.php"
+}

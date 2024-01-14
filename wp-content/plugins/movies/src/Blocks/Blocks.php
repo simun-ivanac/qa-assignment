@@ -24,8 +24,23 @@ class Blocks
 	 */
 	public function registerHooks(): void
 	{
+		// Register new block.
+		\add_action('init', [$this, 'registerBlock'], 11);
+
 		// Create new block category.
 		\add_filter('block_categories_all', [$this, 'createCustomCategory']);
+	}
+
+	/**
+	 * Method used to register Gutenberg blocks.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return void
+	 */
+	public function registerBlock(): void
+	{
+		\register_block_type(dirname(__DIR__, 2). '/build');
 	}
 
 	/**
