@@ -1,0 +1,31 @@
+{
+	"name": "simun-ivanac/movies",
+	"description": "Movies plugin.",
+	"keywords": [
+		"movies",
+		"custom post type",
+		"WordPress"
+	],
+	"homepage": "https://movies.test",
+	"license": "GPL-2.0-or-later",
+	"author": "Šimun Ivanac",
+	"support": {
+		"issues": "https://github.com/simun-ivanac",
+		"source": "https://github.com/simun-ivanac"
+	},
+	"require": {
+		"php": "^8.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Movies\\": "src/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config": {
+		"sort-packages": true,
+		"optimize-autoloader": true,
+		"process-timeout": 2000
+	}
+}
